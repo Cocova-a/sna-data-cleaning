@@ -1,0 +1,7 @@
+interface:
+  display_name: "SNA Data Cleaning"
+  short_description: "Clean transfer CSVs into SNA panels and metrics."
+  default_prompt: "Use $sna-data-cleaning to clean my transfer records CSV into a panel and compute yearly network metrics."
+
+policy:
+  allow_implicit_invocation: true
