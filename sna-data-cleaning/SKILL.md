@@ -20,8 +20,8 @@ Default outputs:
 - `<prefix>网络指标.csv`
 
 If the user does not specify `prefix`, infer it from the original CSV stem by removing a trailing `记录` if present. For example:
-- `人工智能技术专利转移记录.csv` -> `人工智能技术专利转移面板.csv`
-- `人工智能技术专利转移记录.csv` -> `人工智能技术专利转移网络指标.csv`
+- `转移记录.csv` -> `转移面板.csv`
+- `转移记录.csv` -> `转移网络指标.csv`
 
 ## Cleaning Rules
 
@@ -66,7 +66,7 @@ Metric definitions:
 Use the bundled Python runtime when available. Example:
 
 ```powershell
-& "<python>" "C:\Users\叶柯延\.codex\skills\sna-data-cleaning\scripts\build_sna_panel.py" `
+& "<python>" "C:\Users\你的用户名\.codex\skills\sna-data-cleaning\scripts\build_sna_panel.py" `
   --input-csv "D:\path\xxxx记录.csv" `
   --city-reference "D:\path\市县简称对照.xlsx" `
   --output-dir "D:\path\outputs"
